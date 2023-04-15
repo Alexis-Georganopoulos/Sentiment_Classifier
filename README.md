@@ -29,12 +29,12 @@ Finally, the `updateParams()` function is defined to update the parameters using
 ## Discussion of Results
 As mentioned in the code, the datasets must remain relatively small due to computational limits. Pivotal improvements could be done by using `Pytorch` as-is, to take advantage of GPU memory.
 
-The results themselves are mixed, by promising. The loss of the training and validation set both plateau after ~100-150 epochs, with the validation loss eventually converging towards the end.
+The results themselves are mixed, but promising. The loss of the training and validation set both plateau after ~100-150 epochs, with the validation loss eventually converging towards the end.
 This indicates the model is successfully minimising the loss functions.
 
 However, the accuracy on the training set is 50%, no better than random chance. Given that the architecture dynamically allocates its width depending on the size of the training set, this indicates its an issue with the quantity of data. We simply need much more of it, but there are computational limits within Google Colab.
 
-Imbalances in the training/validation sets lead to better results, but defeats the purpose.
+Imbalances in the training/validation sets lead to better results, but that defeats the purpose.
 
 ## Running the Code
 To use this source code, you need to run the entire [`RNN_YELP`](RNN_YELP.ipynb) script.
