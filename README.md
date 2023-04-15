@@ -40,4 +40,4 @@ Imbalances in the training/validation sets lead to better results, but defeats t
 To use this source code, you need to run the entire [`RNN_YELP`](RNN_YELP.ipynb) script.
 Alternatively, you can view my [notebook](RNN_YELP.ipynb) as-is, or run it directly in [Google Colab](https://colab.research.google.com/github/Alexis-Georganopoulos/Sentiment_Classifier/blob/main/RNN_YELP.ipynb).
 The source code is self-contained but requires one additional source file(the `reviews.csv`). Any other dataset of reviews will also suffice.
- Once you run the script, the output will display the loss and accuracy of the model, as well as some sample of the training set . The RNN model will be defined and ready to train.
+ Once you run the script, the output will display the loss and accuracy of the model, as well as some samples of the training set . The RNN model will be defined and ready to train.
