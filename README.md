@@ -28,8 +28,18 @@ Next, the loss and accuracy functions are defined. The `computeLoss()` function 
 
 Finally, the `updateParams()` function is defined to update the parameters using the gradients calculated during back-propagation. The update is done using stochastic gradient descent (SGD) with a given learning rate.
 
+## Discussion of Results
+---
+As mentioned in the code, the datasets must remain relatively small due to computational limits. Further improvements could be done by using `Pytorch` as-is, to take advantage of GPU memory.
+
+The results themselves are mixed, by promising. The loss of the training and validation set both plateau after ~100-150 epochs, with the validation loss eventually converging towards the end.
+This indicates the model is successfully minimising the loss functions.
+
+However, the accuracy on the training set is 50%, no better than random chance. Given that the architecture dynamically allocates its size depending on the t
+
 ## Running the Code
 ---
 To use this source code, you need to run the entire [`RNN_YELP`](RNN_YELP.ipynb) script.
 Alternatively, you can view my [notebook](RNN_YELP.ipynb) as-is, or run it directly in [Google Colab](https://colab.research.google.com/github/Alexis-Georganopoulos/Sentiment_Classifier/blob/main/RNN_YELP.ipynb).
-The source code is self-contained and does not require any additional files. Once you run the script, the output will display the loss and accuracy of the model, as well as a visualization of some sample images. The CNN model will be defined and ready to train.
+The source code is self-contained but requires one additional source file(the `reviews.csv`). Any other dataset of reviews will also suffice.
+ Once you run the script, the output will display the loss and accuracy of the model, as well as some sample of the training set . The RNN model will be defined and ready to train.
