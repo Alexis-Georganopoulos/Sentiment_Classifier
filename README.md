@@ -20,7 +20,7 @@ The function then concatenates all of the generated one-hot vectors horizontally
 While the architecture is straightforward, the forward propagation, parameter update, and loss function have all been implemented manually.<br>
 The idea is to use `Pytorch` in a granular fashion, relying on it for back-propagation, but everything else done without it.
 
-First, the architecture of the RNN is defined by initializing the parameters for the input layer (`Wx`), the hidden layer (`Wh`), and the output layer (`Wy`). The forward propagation is defined using two functions: `stepForward()` for processing each individual token in a review, and `fullForwardRNN()` for processing a whole review. The `computeForward()` function applies fullForwardRNN() across all reviews in the input data-frame.
+First, the architecture of the RNN is defined by initializing the parameters for the input layer (`Wx`), the hidden layer (`Wh`), and the output layer (`Wy`). The forward propagation is defined using two functions: `stepForward()` for processing each individual token in a review, and `fullForwardRNN()` for processing a whole review. The `computeForward()` function applies `fullForwardRNN()` across all reviews in the input data-frame.
 
 Next, the loss and accuracy functions are defined. The `computeLoss()` function calculates the binary cross-entropy loss between the predicted output and the actual output, where the predicted output is passed through the sigmoid activation function. The `computeAccuracy()` function calculates the classification accuracy between the predicted output and the actual output.
 
