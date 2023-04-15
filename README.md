@@ -30,6 +30,6 @@ Finally, the `updateParams()` function is defined to update the parameters using
 
 ## Running the Code
 ---
-To use this source code, you need to run the entire CNN_CIFAR10 script.
-Alternatively, you can view my notebook as-is, or run it directly in Google Colab.
+To use this source code, you need to run the entire [RNN_YELP](RNN_YELP.ipynb) script.
+Alternatively, you can view my [notebook](RNN_YELP.ipynb) as-is, or run it directly in [Google Colab](https://colab.research.google.com/drive/1m1TTZmBZPB_Jj9-SytM-Uj6zDm8xlm70#scrollTo=_cJSHBjLjxN6).
 The source code is self-contained and does not require any additional files. Once you run the script, the output will display the loss and accuracy of the model, as well as a visualization of some sample images. The CNN model will be defined and ready to train.
